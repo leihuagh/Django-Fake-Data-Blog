@@ -29,6 +29,7 @@
 ### Apps
 
 - core
+- authentication
 - blog
 
 ## Commands Used in Project
