@@ -1,6 +1,6 @@
 from django.urls import path
-from .views import about, contact
 from home.views import index
+from company.views import about, contact
 from authentication.views import login_view, logout_view
 from accounts.views import register
 
