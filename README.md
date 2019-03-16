@@ -30,6 +30,8 @@
 
 - core
 - authentication
+- home
+- company
 - accounts
 - blog
 
