@@ -69,7 +69,7 @@ TEMPLATES = [
             ],
             'libraries':{
                 'datetime_tags': 'core.templatetags.datetime_tags',
-                'key_tags': 'get_google_map_api_key'
+                'key_tags': 'core.templatetags.key_tags',
             }
         },
     },
