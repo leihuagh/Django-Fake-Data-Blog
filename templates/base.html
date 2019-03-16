@@ -6,7 +6,11 @@
 </head>
 
 <body>
-    <h1>Base</h1>
+    <nav>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'about' %}">About</a></li>
+        <li><a href="{% url 'contact' %}">Contact</a></li>
+    </nav>
 
     {% block main_contents %}
     {% endblock main_contents %}
