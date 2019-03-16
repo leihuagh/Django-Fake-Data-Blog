@@ -67,6 +67,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries':{
+                'datetime_tags': 'core.templatetags.datetime_tags',
+                'key_tags': 'get_google_map_api_key'
+            }
         },
     },
 ]
