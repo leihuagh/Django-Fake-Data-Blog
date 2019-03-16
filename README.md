@@ -30,6 +30,7 @@
 
 - core
 - authentication
+- accounts
 - blog
 
 ## Commands Used in Project
