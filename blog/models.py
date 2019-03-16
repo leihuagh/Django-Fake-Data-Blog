@@ -1,3 +1,7 @@
 from django.db import models
+from django.contrib.auth.models import User
+from core.models import TimeStampModel
 
-# Create your models here.
+
+class Post(TimeStampModel):
+    pass
