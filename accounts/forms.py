@@ -6,8 +6,9 @@ class RegisterForm(forms.Form):
     username = forms.CharField(
         widget=forms.TextInput(
             attrs={
-                "class": "form-control mb-3",
-                "placeholder": "Username"
+                "class": "form-control",
+                "placeholder": "Username",
+                "id": "username"
             }
         )
     )
@@ -16,8 +17,9 @@ class RegisterForm(forms.Form):
         label='First Name',
         widget=forms.TextInput(
             attrs={
-                "class": "form-control mb-3",
-                "placeholder": "First Name"
+                "class": "form-control",
+                "placeholder": "First Name",
+                "id": "firstName"
             }
         )
     )
@@ -26,8 +28,9 @@ class RegisterForm(forms.Form):
         label='Last Name',
         widget=forms.TextInput(
             attrs={
-                "class": "form-control mb-3",
-                "placeholder": "Last Name"
+                "class": "form-control",
+                "placeholder": "Last Name",
+                "id": "lastName"
             }
         )
     )
@@ -35,8 +38,9 @@ class RegisterForm(forms.Form):
     email = forms.EmailField(
         widget=forms.EmailInput(
             attrs={
-                "class": "form-control mb-3",
-                "placeholder": "Your email"
+                "class": "form-control",
+                "placeholder": "Your email",
+                "id": "email"
             }
         )
     )
@@ -44,7 +48,8 @@ class RegisterForm(forms.Form):
     password = forms.CharField(
         widget=forms.PasswordInput(
             attrs={
-                "class": "form-control mb=3"
+                "class": "form-control",
+                "id": "password"
             }
         )
     )
@@ -53,7 +58,8 @@ class RegisterForm(forms.Form):
         label="Confirm Password",
         widget=forms.PasswordInput(
             attrs={
-                "class": "form-control mb-3"
+                "class": "form-control",
+                "id": "password2"
             }
         )
     )
