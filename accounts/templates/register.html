@@ -5,5 +5,20 @@ Register
 {% endblock head_title %}
 
 {% block main_contents %}
-<h1>Register</h1>
+<div class="container">
+    <div class="py-3 text-center">
+        <h2>User Register Form</h2>
+    </div>
+    <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+            <form method="POST"> {% csrf_token %}
+                {{ form }}
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Register</button>
+            </form>
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+</div>
 {% endblock main_contents %}
