@@ -5,5 +5,49 @@
 {% endblock head_title %}
 
 {% block main_contents %}
-<h1>Contact Us</h1>
+<div class="container">
+    <div class="py-3 text-center">
+        <h2>Contact Us</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <h4 class="mb-3">Contact Form</h4>
+            <form method="POST"> {% csrf_token %}
+                {{ form }}
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="col-md-5 mb-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+                <span class="text-muted">Find Us on Map</span>
+            </h4>
+            <div class="row">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2944.0367751785866!2d-71.23186208516445!3d42.44823363752241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e39dd019d0b5cb%3A0xcb833288ae51a8cf!2sCary+Memorial+Library!5e0!3m2!1sen!2sus!4v1553432193201"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="my-3">
+                <div class="d-flex">
+                    <i class="fas fa-map-marker-alt p-1 mr-3 align-self-top"></i>
+                    <p>
+                        123 Jane Mount Street <br>
+                        Haleyfurt, Arizona 79971
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <i class="fas fa-phone p-1 mr-3 align-self-top"></i>
+                    <p>(019)067-8503</p>
+                </div>
+                <div class="d-flex">
+                    <i class="far fa-envelope p-1 mr-3 align-self-top"></i>
+                    <p>slsodo@example.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock main_contents %}
